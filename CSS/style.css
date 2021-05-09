@@ -70,7 +70,7 @@ body {
     background-image: url('../Images/Header.jpg');
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
 
 .bg-filter {
@@ -89,6 +89,8 @@ body {
     display: block;
     box-sizing: border-box;
     padding-top: 20%;
+    animation-name: FadeIn;
+    animation-duration: 2s;
 }
 
 .banner-heading h1{
@@ -98,6 +100,8 @@ body {
     color: white;
     font-weight: normal;
     margin: 0%;
+    animation-name: fadeinup;
+    animation-duration: 2s;
 }
 
 .banner-heading h2{
@@ -107,6 +111,8 @@ body {
     font-weight: normal;
     color: white;
     margin: 0%;
+    animation-name: fadeinup;
+    animation-duration: 2s;
 }
 
 
@@ -224,4 +230,48 @@ footer {
     color: white;
     text-align: center;
     font-family: 'Lato', sans-serif;
+}
+
+@-webkit-keyframes FadeIn
+{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeIn
+{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinup
+{
+    from {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeinup
+{
+    from {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }
